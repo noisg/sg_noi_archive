@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>National Olympiad in Informatics - NOI 1998 Tasks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script language=JavaScript>
+<!-- Script courtesy of http://www.web-source.net - Your Guide to Professional Web Site Design and Development
+function Navigate() {
+var number = NavSelect.selectedIndex;
+location.href = NavSelect.options[number].value; }
+// -->
+</script>
+
+</head>
+
+<body>
+<table width="801" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="2"><img src="images/header.jpg" width="801" height="191" /></td>
+  </tr>
+  <tr>
+    <td width="187" background="images/sidemenu.jpg" style="background-repeat:no-repeat " valign="top">
+    <table width="187" border="0" cellspacing="8" cellpadding="0">
+<tr>
+<td><img src="/~noi/images/blue_sq.gif" width="10" height="8"/> <a href="/~noi/index.html" class="menu_link">Home</a></td>
+</tr>
+<tr>
+<td valign="top"><img src="/~noi/images/blue_sq.gif" width="10" height="8" /> <span title="home"><span class="menu">18th NOI</span></span><br />
+<a href="/~noi/2015/committee.html" class="menu_small">Committee</a><br />
+<a href="/~noi/2015/eligibility.html" class="menu_small">Eligibility</a></span><br />
+<a href="/~noi/2015/rules.html" class="menu_small">Rules &amp; Regulations</a></span><br />
+<a href="/~noi/2015/programme.html" class="menu_small">Programme</a><br />
+<a href="/~noi/2015/livecd.html" class="menu_small">Coding Environment</a><br />
+<a href="/~noi/2015/instructions.pdf" class="menu_small">Instructions (PDF)</a><br />
+<!--
+<a href="/~noi/results.html" class="menu_small">Results</a><br />
+<a href="/~noi/tasks/2010/" class="menu_small">Tasks</a><br />
+<a href="http://av.comp.nus.edu.sg/coppermine/albums/NOI20100313/index.htm" class="menu_small">Photos</a><br />
+-->
+
+</td>
+</tr>
+<tr>
+<td valign="top"><img src="/~noi/images/blue_sq.gif" width="10" height="8" /> <span title="home"><span class="menu">About NOI</span></span><br />
+<a href="/~noi/aboutnoi.html" class="menu_small">About NOI</a><br />
+<a href="/~noi/acknowledgement.html" class="menu_small">Acknowledgment</a><br />
+<a href="/~noi/aboutioi.html" class="menu_small">About IOI</a><br /></td>
+</tr>
+<tr>
+<td><img src="/~noi/images/blue_sq.gif" width="10" height="8" /> <span title="competitions"><span class="menu">Competition</span></span><br />
+<a href="/~noi/2012/tasks.html" class="menu_small">Problem Sets</a><br />
+<a href="/~noi/2012/results.html" class="menu_small">Results</a><br />
+<!--a href="/~noi/photos.html" class="menu_small">Photo Gallery</a><br /-->
+</td>
+</tr>
+<tr>
+<td><img src="/~noi/images/blue_sq.gif" width="10" height="8" /><span title="support"><span class="menu"> Support</span></span><br />
+<a href="/~noi/2011/contacts.html" class="menu_small">Contacts</a><br /></td>
+</tr>
+</table>
+     
+</td>
+    <td width="614" valign="top"><table width="90%"  border="0" align="center" cellpadding="10" cellspacing="0">
+      <tr><td>
+        <span class="content">
+	<br>
+<div class="tasks_by_year">
+Tasks Archive : 
+<a href="/~noi/2013/tasks.html">13</a> |
+<a href="/~noi/2012/tasks.html">12</a> |
+<a href="/~noi/tasks/2011/">11</a> |
+<a href="/~noi/tasks/2010/">10</a> |
+<a href="/~noi/tasks/2009/">09</a> |
+<a href="/~noi/tasks/2008/">08</a> |
+<a href="/~noi/tasks/2007/">07</a> |
+<a href="/~noi/tasks2006.html">06</a> |
+<a href="/~noi/tasks2005.html">05 </a> |
+<a href="/~noi/tasks2005ps.html">05 (Prelim)</a> |
+<a href="/~noi/tasks2004.html">04</a> |
+<a href="/~noi/tasks2003.html">03</a> |
+<a href="/~noi/tasks2002.html">02</a> | 
+<a href="/~noi/tasks2001.html">01</a> |
+<a href="/~noi/tasks2000.html">00</a> |
+<a href="/~noi/tasks1999.html">99</a> |
+<a href="/~noi/tasks1998.html">98</a>
+</div>
+
+	<h1>NOI 1998 TASKS</h1>
+    <table border=0 cellpadding=1 cellspacing=1>
+
+            <tr>
+              <td align=left colspan=2>&nbsp;</td>
+            </tr>
+            <tr>
+              <td align=left colspan=2 bgcolor="#FFCCCC">
+              <font face="Arial" size=2>
+              <b>Overview</b></font></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                <div align=left>
+                <table border=0 cellpadding=2 cellspacing=2>
+                  <tr> 
+                    <th>&nbsp;</th> <th>Task 1</th> 
+                    <th>Task 2</th> <th>Task 3</th> 
+                  </tr>
+                  <tr> 
+                    <td><b>Program name:</b></td> <td>SHIP.EXE</td> 
+                    <td>KNIGHT.EXE</td> <td>SUM.EXE</td>
+                  </tr>
+                  <tr> 
+                    <td><b>Input file:</b></td> <td>SHIP.IN</td> 
+                    <td>KNIGHT.IN</td> <td>SUM.IN</td>
+                  </tr>
+                  <tr> 
+                    <td><b>Output file:</b></td> <td>SHIP.OUT</td> 
+                    <td>KNIGHT.OUT</td> <td>SUM.OUT</td>
+                  </tr>
+                  <tr> 
+                    <td><b>Maximum execution time:</b></td> 
+                    <td>1 minute</td> <td>1 minute</td> <td>1 minute</td>
+                  </tr>
+                  <tr> 
+                    <td><b>Test cases:</b></td> <td>6</td> 
+                    <td>6</td> <td>6</td>
+                  </tr>
+                  <tr> 
+                    <td><b>Total points:</b></td> 
+                    <td>100</td> <td>100</td> <td>100</th>
+                  </tr>
+                </table></div>
+                <br>
+              <td>
+            </tr>
+
+            <!-- ******** Task 1 ******** -->
+            <tr>
+              <td align=left colspan=2 bgcolor="#FFCCCC">
+              <font face="Arial" size=2>
+              <b>Task 1: Ship Berth Assignment</b></font></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                Ships have to be berthed alongside a harbour for short stays.  
+                To minimize the number of berths of the harbour used, the 
+                harbour planners want to use berths efficiently, reusing them 
+                when ships leave.  You are charged with implementing a solution 
+                to their berth assignment problem.<br>
+                <br>
+                You are given the arrival and departure times for <i>N</i> 
+                ships.  The arrival time of the <i>j</i>th ship is <i>A[j]</i>,
+                and its departure time is <i>D[j]</i>, and these times occur 
+                with a <i>T</i>-hour period, so that 1 &lt;= <i>A[j]</i> &lt; 
+                <i>D[j]</i> &lt;= <i>T</i>.  
+                Each ship must be assigned a berth during its stay, namely, 
+                during the time interval <i>[A[j],D[j]]</i>.  For simplicity,
+                we assume that each ship has unit length and each berth also 
+                has unit length and so any ship can be assigned to any berth.  
+                However, of course, two ships cannot use the same berth at 
+                the same time, so if ships numbered <i>j</i> and <i>k</i> use 
+                the same berth, it must be the case that either <i>A[j]</i> 
+                &gt; <i>D[k]</i> or <i>A[k]</i> &gt; <i>D[j]</i>.<br>
+                <br>
+                Your program is required to do the assignment of berths to 
+                ships in such a way as to minimize the total number of berths 
+                that are used at least once. Your program will output this 
+                minimum total number of berths used (you should not output 
+                the entire assignment).<br>
+                <br>
+                You may assume that <i>N</i> &lt;= 1000, <i>T</i> &lt;= 48, 
+                and, for each <i>j</i>, <i>A[j]</i> and <i>D[j]</i> are 
+                integers between 1 and 48 inclusive.<br>
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                <b>Input File Format</b></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                The input file <tt>SHIP.IN</tt> contains the integer 
+                <i>T</i> (the number of hours) on the first line, the 
+                integer <i>N</i> (the number of ships) on the second line, 
+                followed by <i>N</i> lines, each containing three integers: 
+                a ship number, the arrival time of the ship and the departure 
+                time of the ship.<br>
+                <br>
+                For example, consider the following input:<br>
+                <br>
+                <font face="Courier" size="2">
+                16          <br>
+                8           <br>
+                1   1   4   <br>
+                2   3   8   <br>
+                3   6  12   <br>
+                4   5  10   <br>
+                5  11  16   <br>
+                6   3   9   <br>
+                7  13  15   <br>
+                8   1   2   <br>
+                </font>
+                <br>
+                In this example, the value of <i>T</i>, given on the first 
+                line, is 16.  The number of ships <i>N</i> is given next: 8.  
+                Finally, ship number 1 arrives at time 1 and leaves at time 4, 
+                ship number 2 arrives at time 3 and leaves at time 8, and 
+                so on.<br>
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+              <b>Output File Format</b></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                The output file <tt>SHIP.OUT</tt> contains a single integer, 
+                which indicates the minimum number of berths used.<br>
+                <br>
+                For the above example, the output will be: <br>
+                <br>
+                <font face="Courier" size="2">
+                4 <br>
+                </font>
+                <br>
+                <hr noshade>
+              </td>
+            </tr>
+            <tr>
+              <td align=left>
+                Task #1 Data: </td>
+              <td align=left>
+                [ <a href="tasks/1998/0SHIP.IN">Set #0</a> |
+                  <a href="tasks/1998/1SHIP.IN">Set #1</a> |
+                  <a href="tasks/1998/2SHIP.IN">Set #2</a> |
+                  <a href="tasks/1998/3SHIP.IN">Set #3</a> |
+                  <a href="tasks/1998/4SHIP.IN">Set #4</a> |
+                  <a href="tasks/1998/5SHIP.IN">Set #5</a> |
+                  <a href="tasks/1998/6SHIP.IN">Set #6</a> ] </td>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                <hr noshade><br></td>
+            </tr>
+
+            <!-- ******** Task 2 ******** -->
+            <tr>
+              <td align=left colspan=2 bgcolor="#FFCCCC">
+              <font face="Arial" size=2>
+              <b>Task 2: Knight Moves</b></font></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                A jump of a knight on an <i>N</i> x <i>N</i> chess board 
+                consists of two horizontal steps and one vertical step, or 
+                one horizontal step and two vertical steps.  For example, 
+                consider a knight on position <i>K</i>=(3,2) in the 
+                following 5 x 5 board.<br>
+                <br>
+                <font face="Courier" size="2"><pre>
+                       1   2   3   4   5   
+                     +---+---+---+---+---+   
+                  1  |   |   |   | X | P |   
+                     +---+---+---+---+---+   
+                  2  |   |   |   | X |   |   
+                     +---+---+---+---+---+   
+                  3  |   | K |   | X |   |   
+                     +---+---+---+---+---+   
+                  4  |   |   |   | X |   |   
+                     +---+---+---+---+---+   
+                  5  |   |   |   |   |   |   
+                     +---+---+---+---+---+   </pre>
+                </font>
+                <br>
+                This knight can jump to positions (1,1), (1,3), (2,4), (4,4),
+                (5,3) and (5,1). The knight can move to position 
+                <i>P</i>=(1,5) by jumping first to (5,3), then to (3,4) and 
+                then to <i>P</i>. This is the least number of jumps to get 
+                from <i>K</i> to <i>P</i>.<br>
+                <br>
+                The board may contain forbidden positions, indicated by 
+                <i>X</i> in the above board. The knight may not land on 
+                a forbidden position. In the above situation, the only 
+                allowed way to get from <i>K</i> to <i>P</i> with 3 jumps is 
+                via (1,1) and (2,3).<br>
+                <br>
+                Write a program that, given a board size <i>N</i>, an initial 
+                position <i>K</i> of the knight, a target position <i>P</i> 
+                and a list of forbidden positions, computes the least number 
+                of jumps to get from <i>K</i> to <i>P</i> while not landing 
+                on any forbidden positions.  The board size <i>N</i> in
+                the test data and the number of forbidden positions both 
+                range from 5 to 50. <br>
+                <br>
+                Output the value -1 if there is no way to get from <i>K</i> 
+                to <i>P</i> without landing on any forbidden positions.<br>
+                <br>
+              </td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                <b>Input File Format</b></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                The input file <tt>KNIGHT.IN</tt> contains 
+                <ul>
+                  <li> the board size <i>N</i> on the first line, </li>
+                  <li> the initial position <i>K</i> of the knight on the 
+                       second line, </li>
+                  <li> the target position <i>P</i> on the third line, </li>
+                  <li> the number <i>T</i> of forbidden positions on the 
+                       fourth line, followed by <i>T</i> lines each 
+                       containing a forbidden position.  </li>
+                </ul>
+                The input data corresponding to the chess board
+                shown in the example above is as follows.<br>
+                <br>
+                <font face="Courier" size="2">
+                5           <br>
+                3 2         <br>
+                1 5         <br>
+                4           <br>
+                1 4         <br>
+                2 4         <br>
+                3 4         <br>
+                4 4         <br>
+                </font>
+                <br>
+                On the first line is the number 5 of rows and columns.  
+                Next is the initial position <i>K</i>, which is (3,2).  
+                The target position <i>P</i> is given on the third line.  
+                Next, the number of forbidden positions, 4 in this example, 
+                is given.  The list of forbidden positions follows, 
+                one per line.<br>
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+              <b>Output File Format</b></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                The output file <tt>KNIGHT.OUT</tt> contains an integer which 
+                indicates the number of jumps in the shortest move from 
+                <i>K</i> to <i>P</i>.  Output -1 if there is no solution.<br>
+                <br>
+                For the above example, the output will be: <br>
+                <br>
+                <font face="Courier" size="2">
+                3
+                </font>
+                <br>
+                <hr noshade>
+              </td>
+            </tr>
+            <tr>
+              <td align=left>
+                Task #2 Data: </td>
+              <td align=left>
+                [ <a href="tasks/1998/0KNIGHT.IN">Set #0</a> |
+                  <a href="tasks/1998/1KNIGHT.IN">Set #1</a> |
+                  <a href="tasks/1998/2KNIGHT.IN">Set #2</a> |
+                  <a href="tasks/1998/3KNIGHT.IN">Set #3</a> |
+                  <a href="tasks/1998/4KNIGHT.IN">Set #4</a> |
+                  <a href="tasks/1998/5KNIGHT.IN">Set #5</a> |
+                  <a href="tasks/1998/6KNIGHT.IN">Set #6</a> ] </td>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                <hr noshade><br></td>
+            </tr>
+
+            <!-- ******** Task 3 ******** -->
+            <tr>
+              <td align=left colspan=2 bgcolor="#FFCCCC">
+              <font face="Arial" size=2>
+              <b>Task 3: Sum Expression</b></font></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                Any positive integer <i>n</i> that is at least 4 can be 
+                expressed as a sum of prime numbers from 2 to <i>n</i>-1.  
+                For example, <br>
+                <br>
+                <pre>
+                9  = 2 + 5 + 2 
+                   = 2 + 3 + 2 + 2 
+                   = 3 + 3 + 3
+                   = 2 + 7.  </pre>
+                <br>
+                (Recall that a prime is an integer <i>p</i> &gt;= 2 whose 
+                only divisors are itself and 1.)<br>
+                <br>
+                Write a program to compute <i>C(n)</i>, the number of 
+                different ways to express <i>n</i> as a sum of primes, where 
+                permutations of a sum are considered to be the same; 
+                ie. 2 + 3 and 3 + 2 should be considered as one expression.  
+                In the example above, <i>C</i>(9) is 4.
+                You may assume 4 &lt;= <i>n</i> &lt;= 96.<br>
+                <br>
+              </td>
+            </tr>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                <b>Input File Format</b></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                The input text file <tt>SUM.IN</tt> contains a positive 
+                integer <i>n</i> which is at most 96.  For example<br>
+                <br>
+                <font face="Courier" size="2">
+                9     <br>
+                </font>
+                <br>
+              </td>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+              <b>Output File Format</b></td> 
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                Your program should produce an output text file 
+                <tt>SUM.OUT</tt> that contains the value <i>C(n)</i>.  
+                For the above example, the output will be: <br>
+                <br>
+                <font face="Courier" size="2">
+                4 <br>
+                </font>
+                <br>
+                <hr noshade>
+              </td>
+            </tr>
+            <tr>
+              <td align=left>
+                Task #3 Data: </td>
+              <td align=left>
+                [ <a href="tasks/1998/0SUM.IN">Set #0</a> |
+                  <a href="tasks/1998/1SUM.IN">Set #1</a> |
+                  <a href="tasks/1998/2SUM.IN">Set #2</a> |
+                  <a href="tasks/1998/3SUM.IN">Set #3</a> |
+                  <a href="tasks/1998/4SUM.IN">Set #4</a> |
+                  <a href="tasks/1998/5SUM.IN">Set #5</a> |
+                  <a href="tasks/1998/6SUM.IN">Set #6</a> ] </td>
+            </tr>
+            <tr>
+              <td align=left colspan=2>
+                <hr noshade><br></td>
+            </tr>
+
+          </table>		  </span>
+                </td>
+      </tr>
+				
+		
+	    <tr><td align="right">Design by <a href="http://www.techsailor.com" target="_new"  class="menu_small2">Techsailor Group</a></td></tr>
+    </table></td>
+  </tr>
+</table>
+
+</body>
+</html>
