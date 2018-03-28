@@ -1,0 +1,1 @@
+print ("\n".join(map(str, sorted([int(raw_input()) for _ in range(int(raw_input()))]))))
