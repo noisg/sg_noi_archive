@@ -25,7 +25,7 @@ int invalid_error(){
 }
 int format_error(){
     cout<<"0\n";
-    cerr<<"Output format isn't correct\n";
+    cerr<<"Output is invalid\n";
     return 0;
 }
 int main(int argc, char** argv){
@@ -61,7 +61,7 @@ int main(int argc, char** argv){
     assert(max_value>=1);
     int num_shields_deployed;
     if(!(contestant_out>>num_shields_deployed))return format_error();
-    if(num_shields_deployed<0||num_shields_deployed>s) return wrong_answer();
+    if(num_shields_deployed<0||num_shields_deployed>s) return format_error();
     for(int i=0;i<num_shields_deployed;++i){
         int loc;
         if(!(contestant_out>>loc))return format_error();
@@ -87,11 +87,7 @@ int main(int argc, char** argv){
     bool* const stop = find(start,shielded+n,false);
     if(find(stop,shielded+n,true)!=shielded+n)return invalid_error();
     const long long ans=v[stop-shielded]-v[start-shielded];
-    for(int i=0;i<=n;++i)cout<<v[i]<<' ';
-    cout<<endl;
-    //cout<<ans<<' '<<max_value;
     if(ans<max_value)return wrong_answer();
     if(ans==max_value)return correct();
-    //cout<<ans<<' '<<max_value;
     return checker_broken();
 }
