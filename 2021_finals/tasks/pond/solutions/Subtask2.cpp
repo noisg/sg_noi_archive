@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-long long A[200000], s[200000], r[2][2000][2], z[200000];
+long long A[300000], s[300000], r[2][2000][2], z[300000];
 
 int main() {
     //freopen("in.txt", "r", stdin);
@@ -12,6 +12,7 @@ int main() {
     r[0][K][0] = 0;
     for (i = 0; i < N - 1; ++i) scanf("%lld", &A[i]), s[i + 1] += s[i] + A[i];
     for (j = 0; j < N; ++j) {
+        //if (!(j % 1000)) fprintf(stderr, "%d\n", j);
         for (i = 0; i + j < N; ++i) if (r[0][i + j][0] > -1 || r[0][i + j][1] > -1) {
             if (r[0][i + j][1] > -1) if (r[0][i + j][0] < 0 || r[0][i + j][0] > r[0][i + j][1] + (s[i + j] - s[i]) * (N - i - j - 1)) r[0][i + j][0] = r[0][i + j][1] + (s[i + j] - s[i]) * (N - i - j - 1);
             if (r[0][i + j][0] > -1) if (r[0][i + j][1] < 0 || r[0][i + j][1] > r[0][i + j][0] + (s[i + j] - s[i]) * i) r[0][i + j][1] = r[0][i + j][0] + (s[i + j] - s[i]) * i;
