@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="6" short-name="dragonfly" url="https://polygon.codeforces.com/p1R1uis/yanhao/dragonfly">
+    <names>
+        <name language="english" value=""/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="medium">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>14</test-count>
+            <input-path-pattern>medium/%02d</input-path-pattern>
+            <answer-path-pattern>medium/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-random 2000 200000" method="generated"/>
+                <test cmd="gen-random 200000 2000" method="generated"/>
+                <test cmd="gen-random-parent 200000 200000 2" method="generated"/>
+                <test cmd="gen-random-parent 200000 200000 10" method="generated"/>
+                <test cmd="gen-random-parent 200000 200000 100" method="generated"/>
+                <test cmd="gen-random-parent 200000 200000 1000" method="generated"/>
+                <test cmd="gen-random-parent 200000 200000 10000" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 200000 2" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 200000 4" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 200000 5" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 200000 9" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 200000 17" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 200000 33" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 200000 1024" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="max_bugs">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>8</test-count>
+            <input-path-pattern>max_bugs/%02d</input-path-pattern>
+            <answer-path-pattern>max_bugs/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-max-bugs 1000 1000 0" method="generated"/>
+                <test cmd="gen-max-bugs 200000 1000 0" method="generated"/>
+                <test cmd="gen-max-bugs 1000 200000 0" method="generated"/>
+                <test cmd="gen-max-bugs 200000 200000 0" method="generated"/>
+                <test cmd="gen-max-bugs 200000 200000 5" method="generated"/>
+                <test cmd="gen-max-bugs 200000 200000 10" method="generated"/>
+                <test cmd="gen-max-bugs 200000 200000 100" method="generated"/>
+                <test cmd="gen-max-bugs 200000 200000 1000" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="tests">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>1</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-anti-hld2 200000 3000000 1024" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="line">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>6</test-count>
+            <input-path-pattern>line/%02d</input-path-pattern>
+            <answer-path-pattern>line/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-straight-line 10 10" method="generated"/>
+                <test cmd="gen-straight-line 1000 10" method="generated"/>
+                <test cmd="gen-straight-line 200000 10" method="generated"/>
+                <test cmd="gen-straight-line 200000 2000" method="generated"/>
+                <test cmd="gen-straight-line 200000 200000" method="generated"/>
+                <test cmd="gen-straight-line 200000 200000 aa" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="full">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>13</test-count>
+            <input-path-pattern>full/%02d</input-path-pattern>
+            <answer-path-pattern>full/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-random 2000 2000000" method="generated"/>
+                <test cmd="gen-random-parent 200000 2000000 2" method="generated"/>
+                <test cmd="gen-random-parent 200000 2000000 10" method="generated"/>
+                <test cmd="gen-random-parent 200000 2000000 100" method="generated"/>
+                <test cmd="gen-random-parent 200000 2000000 1000" method="generated"/>
+                <test cmd="gen-random-parent 200000 2000000 10000" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 2000000 2" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 2000000 4" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 2000000 5" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 2000000 9" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 2000000 17" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 2000000 33" method="generated"/>
+                <test cmd="gen-anti-hld2 200000 2000000 1024" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="small">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>4</test-count>
+            <input-path-pattern>small/%02d</input-path-pattern>
+            <answer-path-pattern>small/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-random 5 5" method="generated"/>
+                <test cmd="gen-random 10 10" method="generated"/>
+                <test cmd="gen-random 1000 1000" method="generated"/>
+                <test cmd="gen-random 1000 1000 aa" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="unique_s">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>8</test-count>
+            <input-path-pattern>unique_s/%02d</input-path-pattern>
+            <answer-path-pattern>unique_s/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-unique-s 1000 1000 0" method="generated"/>
+                <test cmd="gen-unique-s 200000 1000 0" method="generated"/>
+                <test cmd="gen-unique-s 1000 200000 0" method="generated"/>
+                <test cmd="gen-unique-s 200000 200000 0" method="generated"/>
+                <test cmd="gen-unique-s 200000 200000 5" method="generated"/>
+                <test cmd="gen-unique-s 200000 200000 10" method="generated"/>
+                <test cmd="gen-unique-s 200000 200000 100" method="generated"/>
+                <test cmd="gen-unique-s 200000 200000 1000" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="small_b">
+            <time-limit>5000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>8</test-count>
+            <input-path-pattern>small_b/%02d</input-path-pattern>
+            <answer-path-pattern>small_b/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="gen-small-b 1000 1000 0" method="generated"/>
+                <test cmd="gen-small-b 200000 1000 0" method="generated"/>
+                <test cmd="gen-small-b 1000 200000 0" method="generated"/>
+                <test cmd="gen-small-b 200000 200000 0" method="generated"/>
+                <test cmd="gen-small-b 200000 200000 5" method="generated"/>
+                <test cmd="gen-small-b 200000 200000 10" method="generated"/>
+                <test cmd="gen-small-b 200000 200000 100" method="generated"/>
+                <test cmd="gen-small-b 200000 200000 1000" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen-anti-hld.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen-anti-hld2.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen-max-bugs.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen-random-parent.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen-random.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen-small-b.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen-straight-line.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/gen-unique-s.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/brute.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="small"/>
+                    <extra-tag tag="time-limit-exceeded-or-accepted" testset="medium"/>
+                    <extra-tag tag="time-limit-exceeded-or-accepted" testset="max_bugs"/>
+                    <extra-tag tag="time-limit-exceeded-or-accepted" testset="tests"/>
+                    <extra-tag tag="time-limit-exceeded-or-accepted" testset="line"/>
+                    <extra-tag tag="time-limit-exceeded-or-accepted" testset="unique_s"/>
+                    <extra-tag tag="time-limit-exceeded-or-accepted" testset="small_b"/>
+                </extra-tags>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solution-dnc-level.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="medium"/>
+                    <extra-tag tag="accepted" testset="max_bugs"/>
+                    <extra-tag tag="accepted" testset="tests"/>
+                    <extra-tag tag="accepted" testset="line"/>
+                    <extra-tag tag="accepted" testset="small"/>
+                    <extra-tag tag="accepted" testset="unique_s"/>
+                    <extra-tag tag="accepted" testset="small_b"/>
+                </extra-tags>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution-dnc.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="medium"/>
+                    <extra-tag tag="accepted" testset="max_bugs"/>
+                    <extra-tag tag="accepted" testset="tests"/>
+                    <extra-tag tag="accepted" testset="line"/>
+                    <extra-tag tag="accepted" testset="small"/>
+                    <extra-tag tag="accepted" testset="unique_s"/>
+                    <extra-tag tag="accepted" testset="small_b"/>
+                </extra-tags>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solution-hld.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="medium"/>
+                    <extra-tag tag="accepted" testset="max_bugs"/>
+                    <extra-tag tag="accepted" testset="tests"/>
+                    <extra-tag tag="accepted" testset="line"/>
+                    <extra-tag tag="accepted" testset="small"/>
+                    <extra-tag tag="accepted" testset="unique_s"/>
+                    <extra-tag tag="accepted" testset="small_b"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/solution-line.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="line"/>
+                    <extra-tag tag="rejected" testset="small"/>
+                    <extra-tag tag="rejected" testset="small_b"/>
+                    <extra-tag tag="rejected" testset="tests"/>
+                    <extra-tag tag="rejected" testset="max_bugs"/>
+                    <extra-tag tag="rejected" testset="medium"/>
+                    <extra-tag tag="rejected" testset="unique_s"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/solution-max-bugs-2.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="max_bugs"/>
+                    <extra-tag tag="rejected" testset="tests"/>
+                    <extra-tag tag="rejected" testset="line"/>
+                    <extra-tag tag="rejected" testset="small"/>
+                    <extra-tag tag="rejected" testset="small_b"/>
+                    <extra-tag tag="rejected" testset="unique_s"/>
+                    <extra-tag tag="rejected" testset="medium"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/solution-max-bugs.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="max_bugs"/>
+                    <extra-tag tag="rejected" testset="tests"/>
+                    <extra-tag tag="rejected" testset="line"/>
+                    <extra-tag tag="rejected" testset="small"/>
+                    <extra-tag tag="rejected" testset="small_b"/>
+                    <extra-tag tag="rejected" testset="unique_s"/>
+                    <extra-tag tag="rejected" testset="medium"/>
+                </extra-tags>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solution-offline-wavelet.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="medium"/>
+                    <extra-tag tag="accepted" testset="max_bugs"/>
+                    <extra-tag tag="accepted" testset="tests"/>
+                    <extra-tag tag="accepted" testset="line"/>
+                    <extra-tag tag="accepted" testset="small"/>
+                    <extra-tag tag="accepted" testset="unique_s"/>
+                    <extra-tag tag="accepted" testset="small_b"/>
+                    <extra-tag tag="accepted" testset="full"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/solution-small-b.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="small_b"/>
+                    <extra-tag tag="rejected" testset="max_bugs"/>
+                    <extra-tag tag="rejected" testset="tests"/>
+                    <extra-tag tag="rejected" testset="line"/>
+                    <extra-tag tag="accepted" testset="small"/>
+                    <extra-tag tag="rejected" testset="unique_s"/>
+                    <extra-tag tag="rejected" testset="medium"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/solution-unique-s.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="unique_s"/>
+                    <extra-tag tag="rejected" testset="small"/>
+                    <extra-tag tag="rejected" testset="small_b"/>
+                    <extra-tag tag="rejected" testset="line"/>
+                    <extra-tag tag="rejected" testset="tests"/>
+                    <extra-tag tag="rejected" testset="max_bugs"/>
+                    <extra-tag tag="rejected" testset="medium"/>
+                </extra-tags>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solution-wavelet.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="medium"/>
+                    <extra-tag tag="accepted" testset="max_bugs"/>
+                    <extra-tag tag="accepted" testset="tests"/>
+                    <extra-tag tag="accepted" testset="line"/>
+                    <extra-tag tag="accepted" testset="small"/>
+                    <extra-tag tag="accepted" testset="unique_s"/>
+                    <extra-tag tag="accepted" testset="small_b"/>
+                </extra-tags>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>
