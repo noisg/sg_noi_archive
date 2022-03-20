@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="10" short-name="l-board" url="https://polygon.codeforces.com/p1KWAye/pooty/l-board">
+    <names>
+        <name language="english" value=""/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="line_tile">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>3</test-count>
+            <input-path-pattern>line_tile/%02d</input-path-pattern>
+            <answer-path-pattern>line_tile/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="testgen 1 1000 1 0" method="generated"/>
+                <test cmd="testgen 1 1000 0 0" method="generated"/>
+                <test cmd="testgen 1 1000 0 1" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="size300">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>3</test-count>
+            <input-path-pattern>size300/%02d</input-path-pattern>
+            <answer-path-pattern>size300/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="testgen 300 300 1 0" method="generated"/>
+                <test cmd="testgen 300 300 0 0" method="generated"/>
+                <test cmd="testgen 300 300 0 1" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="full_score">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>3</test-count>
+            <input-path-pattern>full_score/%02d</input-path-pattern>
+            <answer-path-pattern>full_score/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="testgen 1000 1000 0 0" method="generated"/>
+                <test cmd="testgen 1000 1000 0 1" method="generated"/>
+                <test cmd="testgen 1000 1000 1 0" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="all_positive">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>4</test-count>
+            <input-path-pattern>all_positive/%02d</input-path-pattern>
+            <answer-path-pattern>all_positive/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="testgen 1000 1000 1 0" method="generated"/>
+                <test cmd="testgen 100 100 1 0" method="generated"/>
+                <test cmd="testgen 1 1000 1 0" method="generated"/>
+                <test cmd="testgen 1000 1 1 0" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="size_100">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>3</test-count>
+            <input-path-pattern>size_100/%02d</input-path-pattern>
+            <answer-path-pattern>size_100/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="testgen 100 100 1 0" method="generated"/>
+                <test cmd="testgen 100 100 0 0" method="generated"/>
+                <test cmd="testgen 100 100 0 1" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="tests">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>4</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="testgen 20 20 0 0" method="generated"/>
+                <test method="manual"/>
+                <test cmd="testgen 1000 1000 0 0" method="generated"/>
+                <test cmd="testgen 2 2 0 1" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="verysmall">
+            <time-limit>3000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>3</test-count>
+            <input-path-pattern>verysmall/%02d</input-path-pattern>
+            <answer-path-pattern>verysmall/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="testgen 2 2 1 0" method="generated"/>
+                <test cmd="testgen 2 2 0 0" method="generated"/>
+                <test cmd="testgen 2 2 0 1" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/testgen.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::hcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="wrong-answer">
+                <source path="solutions/L-allnegBUG.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="rejected" testset="line_tile"/>
+                    <extra-tag tag="rejected" testset="size300"/>
+                    <extra-tag tag="rejected" testset="full_score"/>
+                    <extra-tag tag="accepted" testset="all_positive"/>
+                    <extra-tag tag="rejected" testset="verysmall"/>
+                    <extra-tag tag="rejected" testset="size_100"/>
+                    <extra-tag tag="rejected" testset="tests"/>
+                </extra-tags>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/L.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="line_tile"/>
+                    <extra-tag tag="accepted" testset="size300"/>
+                    <extra-tag tag="accepted" testset="all_positive"/>
+                    <extra-tag tag="accepted" testset="size_100"/>
+                    <extra-tag tag="accepted" testset="tests"/>
+                    <extra-tag tag="accepted" testset="verysmall"/>
+                </extra-tags>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/Marc-solution-LBoard.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/full.py" type="python.3"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/slow.cpp" type="cpp.g++17"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="line_tile"/>
+                    <extra-tag tag="accepted" testset="size300"/>
+                    <extra-tag tag="time-limit-exceeded" testset="full_score"/>
+                    <extra-tag tag="time-limit-exceeded" testset="all_positive"/>
+                    <extra-tag tag="accepted" testset="size_100"/>
+                    <extra-tag tag="time-limit-exceeded" testset="tests"/>
+                    <extra-tag tag="accepted" testset="verysmall"/>
+                </extra-tags>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

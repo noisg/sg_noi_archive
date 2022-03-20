@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="24" short-name="tree-cutting" url="https://polygon.codeforces.com/p9zjvcd/Hotspur1997/tree-cutting">
+    <names>
+        <name language="english" value=""/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+        <statement language="english" path="statements/.pdf/english/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="subtask_5">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>40</test-count>
+            <input-path-pattern>subtask_5/%02d</input-path-pattern>
+            <answer-path-pattern>subtask_5/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="genrandomtree 5000 4" method="generated"/>
+                <test cmd="genrandomtree2 60000" method="generated"/>
+                <test cmd="genrandomtree2 100000" method="generated"/>
+                <test cmd="genrandomtree3 70000 4" method="generated"/>
+                <test cmd="genrandomtree3 100000 5" method="generated"/>
+                <test cmd="genrandomtree 1000 4" method="generated"/>
+                <test cmd="genrandomtree 6000 52" method="generated"/>
+                <test cmd="genrandomtree 7000 100" method="generated"/>
+                <test cmd="genrandomtree 8000 75" method="generated"/>
+                <test cmd="genrandomtree 9000 158" method="generated"/>
+                <test cmd="genrandomtree 50000 10500" method="generated"/>
+                <test cmd="genrandomtree 54000 15500" method="generated"/>
+                <test cmd="genrandomtree 58000 16500" method="generated"/>
+                <test cmd="genrandomtree 300000 16500" method="generated"/>
+                <test cmd="genrandomtree 300000 1800" method="generated"/>
+                <test cmd="genrandomtree2 80000" method="generated"/>
+                <test cmd="genrandomtree2 300000" method="generated"/>
+                <test cmd="genrandomtree3 300000 6" method="generated"/>
+                <test cmd="genrandomtree3 200000 7" method="generated"/>
+                <test cmd="genrandomtree3 50000 8" method="generated"/>
+                <test cmd="genrandomtree2 200000" method="generated"/>
+                <test cmd="genrandomtree3 300000 255" method="generated"/>
+                <test cmd="genrandomtree3 300000 350" method="generated"/>
+                <test cmd="genrandomtree3 300000 450" method="generated"/>
+                <test cmd="genrandomtree3 300000 10500" method="generated"/>
+                <test cmd="genrandomtree3 300000 10600" method="generated"/>
+                <test cmd="genrandomtree3 300000 10700" method="generated"/>
+                <test cmd="genrandomtree3 300000 10800" method="generated"/>
+                <test cmd="genrandomtree3 300000 11000" method="generated"/>
+                <test cmd="genrandomtree3 300000 17000" method="generated"/>
+                <test cmd="genrandomtree3 300000 27000" method="generated"/>
+                <test cmd="genrandomtree3 300000 20000" method="generated"/>
+                <test cmd="genrandomtree3 300000 22000" method="generated"/>
+                <test cmd="genrandomtree3 300000 100000" method="generated"/>
+                <test method="manual"/>
+                <test cmd="degreetree 300000" method="generated"/>
+                <test cmd="degreetree 200000" method="generated"/>
+                <test cmd="degreetree 100000" method="generated"/>
+                <test cmd="degreetree 50000" method="generated"/>
+                <test cmd="degreetree 70000" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="subtask_2">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>27</test-count>
+            <input-path-pattern>subtask_2/%02d</input-path-pattern>
+            <answer-path-pattern>subtask_2/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="genrandomtree 50 7" method="generated"/>
+                <test cmd="genrandomtree2 60" method="generated"/>
+                <test cmd="genrandomtree2 10" method="generated"/>
+                <test cmd="genrandomtree3 70 7" method="generated"/>
+                <test cmd="genrandomtree3 100 16" method="generated"/>
+                <test cmd="genrandomtree 70 2" method="generated"/>
+                <test cmd="genrandomtree 100 8" method="generated"/>
+                <test cmd="genrandomtree 100 9" method="generated"/>
+                <test cmd="genrandomtree 100 10" method="generated"/>
+                <test cmd="genrandomtree3 100 2" method="generated"/>
+                <test cmd="genrandomtree3 100 5" method="generated"/>
+                <test cmd="genrandomtree3 100 7" method="generated"/>
+                <test cmd="genrandomtree2 100" method="generated"/>
+                <test cmd="genrandomtree2 75" method="generated"/>
+                <test cmd="genrandomtree2 90" method="generated"/>
+                <test cmd="genrandomtree3 100 17" method="generated"/>
+                <test cmd="genrandomtree3 100 27" method="generated"/>
+                <test cmd="genrandomtree3 100 37" method="generated"/>
+                <test cmd="genrandomtree3 100 47" method="generated"/>
+                <test cmd="genrandomtree3 100 57" method="generated"/>
+                <test cmd="genrandomtree3 100 51" method="generated"/>
+                <test cmd="genrandomtree3 100 61" method="generated"/>
+                <test method="manual"/>
+                <test cmd="degreetree 100" method="generated"/>
+                <test cmd="degreetree 55" method="generated"/>
+                <test cmd="degreetree 75" method="generated"/>
+                <test cmd="degreetree 80" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="subtask_4">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>28</test-count>
+            <input-path-pattern>subtask_4/%02d</input-path-pattern>
+            <answer-path-pattern>subtask_4/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="degreetree 1000" method="generated"/>
+                <test cmd="degreetree 2000" method="generated"/>
+                <test cmd="degreetree 3000" method="generated"/>
+                <test cmd="degreetree 4000" method="generated"/>
+                <test cmd="degreetree 10000" method="generated"/>
+                <test cmd="degreetree 50000" method="generated"/>
+                <test cmd="degreetree 100000" method="generated"/>
+                <test cmd="degreetree 200000" method="generated"/>
+                <test cmd="degreetree 300000" method="generated"/>
+                <test cmd="degreetree 40000" method="generated"/>
+                <test cmd="degreetree 60000" method="generated"/>
+                <test cmd="degreetree 70000" method="generated"/>
+                <test cmd="degreetree 80000" method="generated"/>
+                <test cmd="degreetree 90000" method="generated"/>
+                <test cmd="degreetree 9000" method="generated"/>
+                <test cmd="degreetree 29000" method="generated"/>
+                <test cmd="degreetree 38000" method="generated"/>
+                <test cmd="degreetree 45000" method="generated"/>
+                <test cmd="degreetree 134000" method="generated"/>
+                <test cmd="degreetree 51000" method="generated"/>
+                <test cmd="degreetree 110000" method="generated"/>
+                <test cmd="degreetree 220000" method="generated"/>
+                <test cmd="degreetree 250000" method="generated"/>
+                <test cmd="degreetree 44000" method="generated"/>
+                <test cmd="degreetree 66000" method="generated"/>
+                <test cmd="degreetree 77000" method="generated"/>
+                <test cmd="degreetree 85000" method="generated"/>
+                <test cmd="degreetree 92000" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="subtask_3">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>33</test-count>
+            <input-path-pattern>subtask_3/%02d</input-path-pattern>
+            <answer-path-pattern>subtask_3/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="genrandomtree 500 147" method="generated"/>
+                <test cmd="genrandomtree2 600" method="generated"/>
+                <test cmd="genrandomtree2 100" method="generated"/>
+                <test cmd="genrandomtree3 700 10" method="generated"/>
+                <test cmd="genrandomtree3 1000 35" method="generated"/>
+                <test cmd="genrandomtree 100 4" method="generated"/>
+                <test cmd="genrandomtree 1000 52" method="generated"/>
+                <test cmd="genrandomtree 3000 33" method="generated"/>
+                <test cmd="genrandomtree 3000 54" method="generated"/>
+                <test cmd="genrandomtree 3000 74" method="generated"/>
+                <test cmd="genrandomtree 3000 100" method="generated"/>
+                <test cmd="genrandomtree 3000 200" method="generated"/>
+                <test cmd="genrandomtree 3000 300" method="generated"/>
+                <test cmd="genrandomtree 3000 400" method="generated"/>
+                <test cmd="genrandomtree 3000 500" method="generated"/>
+                <test cmd="genrandomtree 3000 27" method="generated"/>
+                <test cmd="genrandomtree 3000 37" method="generated"/>
+                <test cmd="genrandomtree 3000 47" method="generated"/>
+                <test cmd="genrandomtree 3000 41" method="generated"/>
+                <test cmd="genrandomtree 3000 31" method="generated"/>
+                <test cmd="genrandomtree 3000 25" method="generated"/>
+                <test cmd="genrandomtree 3000 13" method="generated"/>
+                <test cmd="genrandomtree 3000 11" method="generated"/>
+                <test cmd="genrandomtree 3000 10" method="generated"/>
+                <test cmd="genrandomtree3 3000 25" method="generated"/>
+                <test cmd="genrandomtree2 3000" method="generated"/>
+                <test cmd="genrandomtree2 1000" method="generated"/>
+                <test cmd="genrandomtree2 1500" method="generated"/>
+                <test cmd="genrandomtree2 2000" method="generated"/>
+                <test cmd="genrandomtree3 2000 22" method="generated"/>
+                <test cmd="degreetree 3000" method="generated"/>
+                <test cmd="degreetree 2000" method="generated"/>
+                <test cmd="degreetree 500" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="subtask_1">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>12</test-count>
+            <input-path-pattern>subtask_1/%02d</input-path-pattern>
+            <answer-path-pattern>subtask_1/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="genrandomtree2 5" method="generated"/>
+                <test cmd="genrandomtree2 10" method="generated"/>
+                <test cmd="genrandomtree3 10 2" method="generated"/>
+                <test cmd="genrandomtree3 5 2" method="generated"/>
+                <test cmd="genrandomtree3 10 4" method="generated"/>
+                <test cmd="genrandomtree3 10 3" method="generated"/>
+                <test method="manual"/>
+                <test description="Sample" method="manual"/>
+                <test method="manual"/>
+                <test cmd="genrandomtree2 7" method="generated"/>
+                <test cmd="genrandomtree2 8" method="generated"/>
+                <test cmd="genrandomtree2 9" method="generated"/>
+            </tests>
+        </testset>
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>1</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="genrandomtree2 10" description="SubTask 1 - small" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/degreetree.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genrandomtree.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genrandomtree2.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/genrandomtree3.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::hcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>3</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/brute.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solution-yh.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+    <tags>
+        <tag value="dfs"/>
+        <tag value="trees"/>
+    </tags>
+</problem>
