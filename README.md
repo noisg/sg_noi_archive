@@ -7,3 +7,8 @@ Problems, testdata and solution presentations are sourced from the official webs
 
 ## Solutions
 Solutions are contributed by individual participants of past NOI and they have been credited in their own source code. If you would like to re-distribute, please seek the permission of the original owner.
+
+## Links to later editions
+In order to not bloat the size of this repository, later editions of NOI will not be added here.
+
+2022 finals: https://github.com/noisg/noi_2022_finals
