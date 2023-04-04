@@ -12,3 +12,5 @@ Solutions are contributed by individual participants of past NOI and they have b
 In order to not bloat the size of this repository, later editions of NOI will not be added here.
 
 2022 finals: https://github.com/noisg/noi_2022_finals
+
+2023: https://github.com/noisg/noi_2023
