@@ -14,3 +14,7 @@ In order to not bloat the size of this repository, later editions of NOI will no
 2022 finals: https://github.com/noisg/noi_2022_finals
 
 2023: https://github.com/noisg/noi_2023
+
+2024 prelim: https://github.com/noisg/noi-2024-prelim
+
+2024 finals: https://github.com/noisg/noi-2024-final
