@@ -18,3 +18,5 @@ In order to not bloat the size of this repository, later editions of NOI will no
 2024 prelim: https://github.com/noisg/noi-2024-prelim
 
 2024 finals: https://github.com/noisg/noi-2024-final
+
+2025 prelim: https://github.com/noisg/noi-2025-prelim
